@@ -106,7 +106,7 @@ export const summarize = (p5, scene, px, py, resolution, viewport) => {
         }
 
     }
-    console.log("draw calls ",ct)
+    // console.log("draw calls ",ct)
 
 }
 
@@ -136,5 +136,5 @@ export const drawScene = (p5, scene, px, py, resolution, viewport) => {
     const t0 = performance.now();
     summarize(p5, scene, px, py, resolution, viewport)
     const t1 = performance.now();
-    console.log(`summarize took ${t1 - t0} milliseconds.`);
+    // console.log(`summarize took ${t1 - t0} milliseconds.`);
 }

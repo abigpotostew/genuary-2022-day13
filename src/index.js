@@ -36,6 +36,7 @@ const sketch = p5 => {
         p5.sb = new PRNGRand(new Date().getMilliseconds())
         colorScheme = new ColorScheme(p5)
         p5.noSmooth();
+        p5.frameRate(24)
 
         scene = createScene(p5,colorScheme, gridSize)
     }
